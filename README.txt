@@ -20,6 +20,7 @@ Data
 作業使用方式
 1. 請先依照env_setup安裝conda環境以及fbprophet套件。
 2. 由於需要「未來一週天氣預報」資料，所以請先至https://opendata.cwb.gov.tw/dataset/forecast/F-A0010-001下載json格式，命名為whether_forecast.json並移至作業資料夾中。
+(資料夾內的new_temprature.csv已包含3/23 ~ 3/29 data，可跳過2、3步驟)
 3. 執行python utils.py，會將3/23 ~  3/29的資料合併並產出new_temperature.csv檔案。
 4. 執行 python app.py 或者 python app.py --training "PATH TO YOUR ELECTRICITY DATA(.csv)" --output "OUTPUT FILE NAME(.csv)"
 5. 輸出submission.csv，含3/23 ~ 3/29的備轉容量預測結果。
